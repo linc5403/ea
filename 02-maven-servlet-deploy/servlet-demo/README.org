@@ -1,0 +1,101 @@
+* 使用Maven创建和部署Servlet项目
+** 创建项目
+   ~mvn archetype:generate~
+   
+   选则 ~10 - webapp~, 一步步跟着提示填入 ~GroupID~ 和 ~ArtifactID~,即可生成项目
+
+** POM加入 ~servlet~ 依赖
+   #+begin_src xml
+     <dependency>
+       <groupId>javax.servlet</groupId>
+       <artifactId>javax.servlet-api</artifactId>
+       <version>4.0.1</version>
+       <scope>provided</scope>
+     </dependency>
+   #+end_src
+
+** POM指定 ~JRE~ 版本
+   #+begin_src xml
+     <plugin>
+	 <artifactId>maven-compiler-plugin</artifactId>
+	 <configuration>
+	     <source>11</source>
+	     <target>11</target>
+	 </configuration>
+     </plugin>
+   #+end_src
+
+** 实现自己的 ~servlet~ 代码
+
+   ~src/main/java/club/banyuan/ServletDemo.java~
+
+   #+begin_src java
+     @WebServlet("/servlet")
+     public class ServletDemo extends HttpServlet{
+	     private static final long serialVersionUID = 1L;
+
+	     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+	     resp.getWriter().append("Hello, servlet!");
+	 }
+     }
+   #+end_src
+
+** 生成 ~war~ 文件
+   #+begin_src sh
+     mvn package
+   #+end_src
+
+   在 ~target~ 目录下可以看到新生成的war文件
+
+** 在Tomcat上部署
+
+*** 配置 ~Tomcat~ 管理用户名和密码
+    
+    ~conf/tomcat_users.xml~
+    
+    #+begin_src xml
+      <role rolename="manager-gui"/>
+      <role rolename="manager-script"/>
+      <user username="admin" password="password" roles="manager-gui, manager-script"/>
+    #+end_src
+
+*** 启动或重启Tomcat
+    - ~bin/shutdown.sh~
+    - ~bin/starup.sh~
+
+*** 在Maven中配置Tomcat的用户名和密码
+    ~~/.m2/settings.xml~
+    #+begin_src xml
+      <server>
+	<id>TomcatServer</id>
+	<username>admin</username>
+	<password>password</password>
+      </server>
+    #+end_src
+    
+    *注意: username 和 password 需要和Tomcat的conf文件中配置保持一致*
+
+*** 在项目的POM文件中配置Tomcat的插件
+
+    ~pom.xml~
+    
+    #+begin_src xml
+      <plugin>
+	  <groupId>org.apache.tomcat.maven</groupId>
+	  <artifactId>tomcat7-maven-plugin</artifactId>
+	  <version>2.2</version>
+	  <configuration>
+	      <url>http://localhost:8080/manager/text</url>
+	      <server>TomcatServer</server>
+	      <path>/myapp</path>
+	  </configuration>
+      </plugin>
+    #+end_src
+
+    - ~<url>~ 配置Tomcat的管理地址,你只需要注意IP和端口号是否需要改变,其余不动
+    - ~<server>~ 和Maven ~settings.xml~ 中配置的 ~<server> <id>~ 保持一致
+    - ~<path>~ ~app~ 运行在Tomcat上的路径
+*** 部署或卸载应用
+    - ~mvn tomcat7:deploy~
+    - ~mvn tomcat7:redeploy~
+    - ~mvn tomcat7:undeploy~
