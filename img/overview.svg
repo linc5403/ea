@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="607px" preserveAspectRatio="none" style="width:704px;height:607px;" version="1.1" viewBox="0 0 704 607" width="704px" zoomAndPan="magnify"><defs><filter height="300%" id="ffkvbh5qn93bt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e7fc225581bc111f5fb9eba219994801]
+cluster Enterprise--><rect fill="#ADD8E6" filter="url(#ffkvbh5qn93bt)" height="308" style="stroke: #000000; stroke-width: 1.5;" width="528" x="162.1814" y="53"/><path d="M244.1814,54 L244.1814,66.2719 L234.1814,76.2719 L162.1814,76.2719 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="165.1814" y="70.2399">Enterprise</text><!--MD5=[6ebd69a1680975045c9d229f19beefbf]
+entity worker_1--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="306.6814,94,316.6814,84,407.6814,84,407.6814,124.2719,397.6814,134.2719,306.6814,134.2719,306.6814,94" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="397.6814" x2="406.6814" y1="94" y2="85"/><line style="stroke: #000000; stroke-width: 1.5;" x1="306.6814" x2="397.6814" y1="94" y2="94"/><line style="stroke: #000000; stroke-width: 1.5;" x1="397.6814" x2="397.6814" y1="94" y2="134.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="321.6814" y="120.2399">worker_1</text><!--MD5=[d14d2a7b28818c91a4e127fa1b0af67f]
+entity worker_2--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="170.6814,94,180.6814,84,271.6814,84,271.6814,124.2719,261.6814,134.2719,170.6814,134.2719,170.6814,94" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="261.6814" x2="270.6814" y1="94" y2="85"/><line style="stroke: #000000; stroke-width: 1.5;" x1="170.6814" x2="261.6814" y1="94" y2="94"/><line style="stroke: #000000; stroke-width: 1.5;" x1="261.6814" x2="261.6814" y1="94" y2="134.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="185.6814" y="120.2399">worker_2</text><!--MD5=[ba5c681751085c0d34564f02ca9f717d]
+entity worker_3--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="580.6814,94,590.6814,84,681.6814,84,681.6814,124.2719,671.6814,134.2719,580.6814,134.2719,580.6814,94" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="671.6814" x2="680.6814" y1="94" y2="85"/><line style="stroke: #000000; stroke-width: 1.5;" x1="580.6814" x2="671.6814" y1="94" y2="94"/><line style="stroke: #000000; stroke-width: 1.5;" x1="671.6814" x2="671.6814" y1="94" y2="134.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="595.6814" y="120.2399">worker_3</text><!--MD5=[1cd2a063f82d2ca2f7a33712a399b9db]
+entity worker_n--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="443.1814,94,453.1814,84,545.1814,84,545.1814,124.2719,535.1814,134.2719,443.1814,134.2719,443.1814,94" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="535.1814" x2="544.1814" y1="94" y2="85"/><line style="stroke: #000000; stroke-width: 1.5;" x1="443.1814" x2="535.1814" y1="94" y2="94"/><line style="stroke: #000000; stroke-width: 1.5;" x1="535.1814" x2="535.1814" y1="94" y2="134.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="62" x="458.1814" y="120.2399">worker_n</text><!--MD5=[fa1e3283224feb76407c84b7e90ed808]
+entity Database--><path d="M331.6814,204 C331.6814,194 373.1814,194 373.1814,194 C373.1814,194 414.6814,194 414.6814,204 L414.6814,233.2719 C414.6814,243.2719 373.1814,243.2719 373.1814,243.2719 C373.1814,243.2719 331.6814,243.2719 331.6814,233.2719 L331.6814,204 " fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M331.6814,204 C331.6814,214 373.1814,214 373.1814,214 C373.1814,214 414.6814,214 414.6814,204 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="341.6814" y="234.2399">Database</text><!--MD5=[7f2f8f021ba496bad1f94a1981c7f515]
+entity Cache--><path d="M525.6814,204 C525.6814,194 556.1814,194 556.1814,194 C556.1814,194 586.6814,194 586.6814,204 L586.6814,233.2719 C586.6814,243.2719 556.1814,243.2719 556.1814,243.2719 C556.1814,243.2719 525.6814,243.2719 525.6814,233.2719 L525.6814,204 " fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M525.6814,204 C525.6814,214 556.1814,214 556.1814,214 C556.1814,214 586.6814,214 586.6814,204 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="535.6814" y="234.2399">Cache</text><!--MD5=[ec9693746a5ae180405a351f013c402e]
+entity MQ--><path d="M454.6814,203.5 L485.6814,203.5 C490.6814,203.5 490.6814,218.636 490.6814,218.636 C490.6814,218.636 490.6814,233.7719 485.6814,233.7719 L454.6814,233.7719 C449.6814,233.7719 449.6814,218.636 449.6814,218.636 C449.6814,218.636 449.6814,203.5 454.6814,203.5 " fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M485.6814,203.5 C480.6814,203.5 480.6814,218.636 480.6814,218.636 C480.6814,233.7719 485.6814,233.7719 485.6814,233.7719 " fill="none" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="21" x="454.6814" y="224.7399">MQ</text><!--MD5=[7aa7db7e5a70943a9b2bdaaa7236026b]
+entity WebServer1--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="564.1814,313,574.1814,303,682.1814,303,682.1814,343.2719,672.1814,353.2719,564.1814,353.2719,564.1814,313" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="672.1814" x2="681.1814" y1="313" y2="304"/><line style="stroke: #000000; stroke-width: 1.5;" x1="564.1814" x2="672.1814" y1="313" y2="313"/><line style="stroke: #000000; stroke-width: 1.5;" x1="672.1814" x2="672.1814" y1="313" y2="353.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="579.1814" y="339.2399">WebServer1</text><!--MD5=[c75cb51a7bb4f2acb5c25f701e5b5f30]
+entity WebServer2--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="258.1814,313,268.1814,303,376.1814,303,376.1814,343.2719,366.1814,353.2719,258.1814,353.2719,258.1814,313" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="366.1814" x2="375.1814" y1="313" y2="304"/><line style="stroke: #000000; stroke-width: 1.5;" x1="258.1814" x2="366.1814" y1="313" y2="313"/><line style="stroke: #000000; stroke-width: 1.5;" x1="366.1814" x2="366.1814" y1="313" y2="353.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="273.1814" y="339.2399">WebServer2</text><!--MD5=[e39cd7b203f0d6dd8bf2ad626c6fce1f]
+entity WebServer3--><polygon fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" points="411.1814,313,421.1814,303,529.1814,303,529.1814,343.2719,519.1814,353.2719,411.1814,353.2719,411.1814,313" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="519.1814" x2="528.1814" y1="313" y2="304"/><line style="stroke: #000000; stroke-width: 1.5;" x1="411.1814" x2="519.1814" y1="313" y2="313"/><line style="stroke: #000000; stroke-width: 1.5;" x1="519.1814" x2="519.1814" y1="313" y2="353.2719"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="426.1814" y="339.2399">WebServer3</text><!--MD5=[4a65e84059005d12693a083370a06717]
+entity client--><ellipse cx="174.1814" cy="522.5" fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M174.1814,530.5 L174.1814,557.5 M161.1814,538.5 L187.1814,538.5 M174.1814,557.5 L161.1814,572.5 M174.1814,557.5 L187.1814,572.5 " fill="none" filter="url(#ffkvbh5qn93bt)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="155.6814" y="594.2399">client</text><!--MD5=[9eb86c2b3d925a16ba1bdada40016c70]
+entity Internet--><path d="M235.9226,539.0684 C240.2269,533.9979 244.0358,532.8816 247.9395,539.4809 C250.1229,533.6075 255.043,532.4261 258.8093,537.9745 C262.3229,532.6588 266.1115,531.6299 270.1142,537.4792 C273.0323,532.5498 277.5471,532.5661 280.8375,537.0553 C285.5098,532.6755 289.5123,532.1218 292.9583,538.4441 C296.9163,532.9449 302.311,534.3277 304.4982,540.2355 C312.5455,543.6983 315.5117,549.8855 308.0128,556.6724 C313.5925,564.9642 311.7909,570.8229 302.6971,574.8155 C300.2667,580.6285 295.7195,581.3706 291.9336,576.1362 C290.0731,582.4029 286.1687,582.9536 281.5329,578.9455 C278.4418,584.8147 273.7523,584.8934 269.3864,580.4465 C265.3469,584.8919 260.4703,583.9885 259.2484,577.7683 C254.1874,583.2053 249.4379,581.0229 247.1167,574.8943 C242.6503,579.8452 238.9005,579.6535 235.8617,573.4534 C224.438,571.5134 223.105,564.297 229.7499,556.0218 C224.3304,548.9486 224.9898,540.1879 235.9226,539.0684 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="53" x="242.6814" y="561.7399">Internet</text><!--MD5=[d45ca84582d639e5bf116d6bc20a4c11]
+entity 内容存储--><rect fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" height="40.2719" rx="35" ry="35" style="stroke: #000000; stroke-width: 1.5;" width="76" x="204.1814" y="413"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="214.1814" y="439.2399">内容存储</text><!--MD5=[277065115d0dd977f3ea3485a6a1386b]
+entity LSB--><rect fill="#FEFECE" filter="url(#ffkvbh5qn93bt)" height="40.2719" style="stroke: #000000; stroke-width: 1.5;" width="45" x="399.6814" y="535.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="409.6814" y="561.7399">LSB</text><!--MD5=[a10de4a62a9f6028fd9fff9e8988e8e5]
+link client to Internet--><path d="M192.736,555.5 C204.382,555.5 216.028,555.5 227.6739,555.5 " fill="none" id="client-Internet" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[15ea80befcca9a2b61ca860b7e04672e]
+link Internet to LSB--><path d="M310.7185,555.5 C340.3258,555.5 369.9331,555.5 399.5405,555.5 " fill="none" id="Internet-LSB" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7bc62db1abad627e07e4ceaa0e2224f6]
+link 内容存储 to Internet--><path d="M246.6399,453.2284 C251.2831,474.2947 258.5672,507.343 263.5921,530.1411 " fill="none" id="内容存储-Internet" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[69c4510cff1fdcb3044f03547c97ed82]
+reverse link worker_2 to worker_1--><!--MD5=[bb7984d6afe1d19f66ebb89a96736c6c]
+reverse link worker_3 to worker_2--><!--MD5=[6d9019bac866564dd6b616787df52241]
+reverse link worker_n to worker_3--><!--MD5=[1084b3e976eb98806e6488b70f28356b]
+link worker_1 to MQ--><path d="M383.1058,134.1215 C405.1296,155.4631 436.0232,185.3998 454.4775,203.2826 " fill="none" id="worker_1-MQ" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7dda2118953089c748eca8f56d97cb67]
+link worker_2 to MQ--><path d="M271.7237,128.0895 C324.4386,148.2255 403.3366,179.0633 432.1814,194 C437.8971,196.9598 443.85,200.5372 449.3017,204.0328 " fill="none" id="worker_2-MQ" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d0d0a53a838e0db86b4128bba505749d]
+link worker_3 to MQ--><path d="M594.2447,134.1215 C562.123,155.9683 516.7585,186.8218 490.719,204.5318 " fill="none" id="worker_3-MQ" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a2ad49a2b42e21c7d5f18ade9f530530]
+link worker_n to MQ--><path d="M488.6753,134.1215 C483.9977,155.4631 477.4362,185.3998 473.5167,203.2826 " fill="none" id="worker_n-MQ" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0cb18b6ada72513e8161cea4d0413612]
+link worker_1 to Database--><path d="M360.8521,134.1215 C363.4723,152.0535 366.9792,176.0536 369.5829,193.8728 " fill="none" id="worker_1-Database" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[77d2c5651b92d25d208aef5f59fe5c1e]
+link worker_2 to Database--><path d="M256.0532,134.1215 C280.9452,152.0535 314.2604,176.0536 338.9956,193.8728 " fill="none" id="worker_2-Database" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[05c08aa0abbb0cb62e5fd6419eb6d6ee]
+link worker_3 to Database--><path d="M580.5167,130.503 C532.0889,151.0567 459.9562,181.6711 414.7936,200.839 " fill="none" id="worker_3-Database" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9760c0b1e5d60f7fdf325de91bedb897]
+link worker_n to Database--><path d="M466.4215,134.1215 C446.6062,152.0535 420.0856,176.0536 400.395,193.8728 " fill="none" id="worker_n-Database" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3bc42084767edcdf63bda860507cbc2d]
+link worker_1 to 内容存储--><path d="M301.4883,129.6402 C297.3292,131.1311 293.1925,132.5982 289.1814,134 C209.1769,161.959 157.7921,125.289 108.1814,194 C64.7329,254.1762 70.0928,297.296 108.1814,361 C127.7351,393.7041 167.8121,412.4145 199.0675,422.5167 " fill="none" id="worker_1-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="204.0036,424.065,196.6133,417.5548,199.2328,422.5686,194.219,425.1881,204.0036,424.065" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="306.3749,127.8817,296.5521,127.1657,301.6703,129.5749,299.2611,134.6931,306.3749,127.8817" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5672d50c75453380270e6e5750143f4f]
+link worker_2 to 内容存储--><path d="M165.3789,118.2364 C122.2039,128.6303 65.2046,150.1857 37.1814,194 C-2.8102,256.5269 -5.7337,300.4423 37.1814,361 C56.1974,387.8336 144.4214,411.5174 198.7481,423.8924 " fill="none" id="worker_2-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="203.8962,425.0544,195.9979,419.1708,199.0189,423.9534,194.2363,426.9745,203.8962,425.0544" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="170.3067,117.0837,160.6322,115.2388,165.4381,118.2226,162.4544,123.0285,170.3067,117.0837" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d88294dfa85b8f77f79c6879a803c1b2]
+link worker_3 to 内容存储--><path d="M575.6128,130.0221 C571.4248,131.4243 567.2476,132.7671 563.1814,134 C454.2441,167.0289 407.5786,128.9218 314.1814,194 C266.3438,227.3327 258.1363,247.2144 241.1814,303 C230.5365,338.024 233.781,380.8487 237.5884,407.5321 " fill="none" id="worker_3-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="238.3535,412.6464,240.9777,403.1536,237.6136,407.7014,233.0658,404.3374,238.3535,412.6464" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="580.5282,128.3516,570.7198,127.4602,575.7941,129.9604,573.2939,135.0348,580.5282,128.3516" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4c99682ef4d1987ba0a3afc3dc3c206e]
+link worker_n to 内容存储--><path d="M438.3363,129.8108 C433.9042,131.2857 429.4807,132.701 425.1814,134 C317.4528,166.5491 248.6935,105.496 179.1814,194 C133.3362,252.3709 153.0754,291.5204 179.1814,361 C186.1767,379.6179 200.4114,396.5714 213.5826,409.3443 " fill="none" id="worker_n-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="217.2625,412.8339,213.4844,403.7385,213.6344,409.3934,207.9796,409.5434,217.2625,412.8339" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="443.1435,128.1897,433.3372,127.2756,438.4057,129.7875,435.8937,134.8561,443.1435,128.1897" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[39f81ab857b28a687da597428ef72b29]
+link WebServer1 to LSB--><path d="M600.9029,353.2157 C560.6311,398.7969 476.5051,494.0142 439.8673,535.4823 " fill="none" id="WebServer1-LSB" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c4907cb842f3fd36a1edb3a4083082df]
+link WebServer2 to LSB--><path d="M328.8194,353.2157 C349.8569,398.7969 393.8033,494.0142 412.9424,535.4823 " fill="none" id="WebServer2-LSB" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[910fe2f1f29895abce0dfb9263729e01]
+link WebServer3 to LSB--><path d="M464.8611,353.2157 C455.244,398.7969 435.1542,494.0142 426.4049,535.4823 " fill="none" id="WebServer3-LSB" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8ee0a32b0a7f1adda9589743ebcb0c66]
+link WebServer1 to 内容存储--><path d="M563.7646,354.9861 C558.2075,357.1493 552.6204,359.1931 547.1814,361 C455.9636,391.3029 345.3898,414.0712 285.6181,425.2726 " fill="none" id="WebServer1-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="280.3469,426.2551,289.9275,428.5381,285.2622,425.3388,288.4615,420.6736,280.3469,426.2551" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="568.4217,353.1434,558.5813,352.7352,563.7724,354.983,561.5246,360.1741,568.4217,353.1434" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[83415daca0544f368823770fb18f50c2]
+link WebServer2 to 内容存储--><path d="M296.0736,357.5509 C284.5156,373.732 270.3711,393.5344 259.4732,408.7914 " fill="none" id="WebServer2-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="256.4904,412.9673,264.9764,407.9685,259.3965,408.8986,258.4665,403.3187,256.4904,412.9673" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="299.217,353.1501,290.7309,358.1487,296.3108,357.2187,297.2407,362.7986,299.217,353.1501" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4c515effa1ed16481fb29af1a3acd53f]
+link WebServer3 to 内容存储--><path d="M411.1513,355.1849 C371.7012,373.3527 320.7047,396.8379 285.1003,413.2347 " fill="none" id="WebServer3-内容存储" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="280.4001,415.3992,290.2481,415.2679,284.9417,413.3078,286.9018,408.0014,280.4001,415.3992" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="415.8593,353.0167,406.0113,353.1483,411.3178,355.1082,409.3578,360.4147,415.8593,353.0167" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bdb60a051922b2017237b5eaf749f711]
+link Database to WebServer1--><path d="M414.7444,236.7046 C456.1202,254.8272 519.9421,282.7812 566.0651,302.9831 " fill="none" id="Database-WebServer1" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5bfc60ec7bc97331849ea691e25a5510]
+link Database to WebServer2--><path d="M360.6139,243.0739 C351.5201,260.8555 339.268,284.8127 330.0954,302.7485 " fill="none" id="Database-WebServer2" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[62786a52ef92cf6c1230dc1247d9536e]
+link Database to WebServer3--><path d="M394.9501,243.0739 C410.7017,260.8555 431.9241,284.8127 447.8125,302.7485 " fill="none" id="Database-WebServer3" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1d9860c80ab58446b0e96a1bd4a22083]
+link MQ to WebServer1--><path d="M490.8156,233.2677 C515.6936,251.0725 557.9034,281.2815 587.9675,302.798 " fill="none" id="MQ-WebServer1" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d71af5b970ba494b1ed6a5047b1b7d91]
+link MQ to WebServer2--><path d="M449.5471,233.2677 C424.6691,251.0725 382.4593,281.2815 352.3952,302.798 " fill="none" id="MQ-WebServer2" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3c56179d31156ae32a5a3a99cd7821b8]
+link MQ to WebServer3--><path d="M470.1814,233.7255 C470.1814,251.59 470.1814,281.4759 470.1814,302.8098 " fill="none" id="MQ-WebServer3" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c8ddcb0aaf741f62233b820c327b79a5]
+link Cache to WebServer1--><path d="M571.2175,243.0739 C582.0975,260.8555 596.7563,284.8127 607.7307,302.7485 " fill="none" id="Cache-WebServer1" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[04b53fb3a8d76779195ca3f04b2c33d9]
+link Cache to WebServer2--><path d="M525.5744,234.4286 C519.8224,237.3348 513.8386,240.2998 508.1814,243 C464.1256,264.0281 413.6401,286.4233 375.642,302.9445 " fill="none" id="Cache-WebServer2" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0ddfc6332b717f7d1b1c91ea461553c9]
+link Cache to WebServer3--><path d="M536.8813,243.0739 C522.9159,260.8555 504.1001,284.8127 490.0136,302.7485 " fill="none" id="Cache-WebServer3" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[10684e251bb00eca9971702fc8ca0e65]
+@startuml
+actor client
+cloud Internet
+storage 内容存储
+rectangle LSB
+skinparam frame {
+backgroundColor LightBlue
+}
+frame Enterprise {
+    node worker_1
+    node worker_2
+    node worker_3
+    node worker_n
+    database Database
+    database Cache
+    queue MQ
+    node WebServer1
+    node WebServer2
+    node WebServer3
+}
+client - Internet
+Internet - LSB
+内容存储 - - Internet
+worker_1 -[hidden]left-> worker_2
+worker_2 -[hidden]left-> worker_3
+worker_3 -[hidden]left-> worker_n
+worker_1 - - MQ
+worker_2 - - MQ
+worker_3 - - MQ
+worker_n - - MQ
+worker_1 - - Database
+worker_2 - - Database
+worker_3 - - Database
+worker_n - - Database
+worker_1 <..> 内容存储
+worker_2 <..> 内容存储
+worker_3 <..> 内容存储
+worker_n <..> 内容存储
+
+WebServer1 - - LSB
+WebServer2 - - LSB
+WebServer3 - - LSB
+WebServer1 <..> 内容存储
+WebServer2 <..> 内容存储
+WebServer3 <..> 内容存储
+Database - - WebServer1
+Database - - WebServer2
+Database - - WebServer3
+MQ - - WebServer1
+MQ - - WebServer2
+MQ - - WebServer3
+Cache - - WebServer1
+Cache - - WebServer2
+Cache - - WebServer3
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 20:38:32 CST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

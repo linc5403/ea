@@ -1,0 +1,102 @@
+* 学习路线
+  #+CAPTION: Java EA 大纲
+  #+begin_src plantuml :file ./img/outline.svg
+  @startmindmap
+  ,* Java EA
+  ,** Spring 框架
+  ,*** Servlet
+  ,*** Spring框架
+  ,*** Spring IOC
+  ,*** Spring AOP
+  ,** Spring MVC
+  ,***_ Spring MVC框架
+  ,***_ URL路由
+  ,***_ 路经变量
+  ,***_ 请求的参数处理
+  ,***_ 模板渲染
+  ,***_ 分页处理
+  ,***_ 表单提交
+  ,***_ 表单验证
+  ,***_ Flash Attribute
+  ,***_ 拦截器
+  ,***_ 处理PUT和DELETE请求
+  ,***_ 文件上传
+  ,***_ 异常处理
+  ,***_ AJAX
+  ,***_ 博客项目实践指导
+  ,** Spring-Mybatis
+  ,*** SQL
+  ,*** Mybatis-ORM
+  ,** Spring Security
+  ,** 缓存系统
+  ,** 分布式系统
+  ,** 容器集成
+  @endmindmap
+#+end_src
+
+  #+RESULTS:
+  [[file:./img/outline.svg]]
+
+
+* 企业Web应用全貌
+  
+  #+begin_src plantuml :file ./img/overview.svg
+    @startuml
+    actor client
+    cloud Internet
+    storage 内容存储
+    rectangle LSB
+    skinparam frame {
+    backgroundColor LightBlue
+    }
+    frame Enterprise {
+        node worker_1
+        node worker_2
+        node worker_3
+        node worker_n
+        database Database
+        database Cache
+        queue MQ
+        node WebServer1
+        node WebServer2
+        node WebServer3
+    }
+    client - Internet
+    Internet - LSB
+    内容存储 -- Internet
+    worker_1 -[hidden]left-> worker_2
+    worker_2 -[hidden]left-> worker_3
+    worker_3 -[hidden]left-> worker_n
+    worker_1 -- MQ
+    worker_2 -- MQ
+    worker_3 -- MQ
+    worker_n -- MQ
+    worker_1 -- Database
+    worker_2 -- Database
+    worker_3 -- Database
+    worker_n -- Database
+    worker_1 <..> 内容存储
+    worker_2 <..> 内容存储
+    worker_3 <..> 内容存储
+    worker_n <..> 内容存储
+
+    WebServer1 -- LSB
+    WebServer2 -- LSB
+    WebServer3 -- LSB
+    WebServer1 <..> 内容存储
+    WebServer2 <..> 内容存储
+    WebServer3 <..> 内容存储
+    Database -- WebServer1
+    Database -- WebServer2
+    Database -- WebServer3
+    MQ -- WebServer1
+    MQ -- WebServer2
+    MQ -- WebServer3
+    Cache -- WebServer1
+    Cache -- WebServer2
+    Cache -- WebServer3
+    @enduml
+  #+end_src
+
+  #+RESULTS:
+  [[file:./img/overview.svg]]
