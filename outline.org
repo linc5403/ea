@@ -36,8 +36,7 @@
 
   #+RESULTS:
   [[file:./img/outline.svg]]
-
-
+  
 * 企业Web应用全貌
   
   #+begin_src plantuml :file ./img/overview.svg
@@ -100,3 +99,17 @@
 
   #+RESULTS:
   [[file:./img/overview.svg]]
+
+* 教学安排
+  | 课程内容         | 学时安排(天) |
+  | Servlet          |            3 |
+  | Spring-Framework |            3 |
+  | Spring-MVC       |           15 |
+  | Database         |            5 |
+  | Spring-Security  |            1 |
+  | Spring-Redis     |            1 |
+  | Spring-RabbitMQ  |            1 |
+  | Docker           |            1 |
+  | 合计             |           30 |
+  #+TBLFM: @11$2=vsum(@2..@-1)
+
