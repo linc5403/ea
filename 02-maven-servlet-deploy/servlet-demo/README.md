@@ -1,26 +1,26 @@
 
 # Table of Contents
 
-1.  [使用Maven创建和部署Servlet项目](#org64bee70)
-    1.  [创建项目](#org044791d)
-    2.  [POM加入 `servlet` 依赖](#orgc329988)
-    3.  [POM指定 `JRE` 版本](#orga2b77a4)
-    4.  [实现自己的 `servlet` 代码](#orgeefd974)
-    5.  [生成 `war` 文件](#org78d60b7)
-    6.  [在Tomcat上部署](#org6a8f6fe)
-        1.  [配置 `Tomcat` 管理用户名和密码](#org07926a6)
-        2.  [启动或重启Tomcat](#org82b0a5c)
-        3.  [在Maven中配置Tomcat的用户名和密码](#org3afac1c)
-        4.  [在项目的POM文件中配置Tomcat的插件](#orgebd3083)
-        5.  [部署或卸载应用](#orga9622fb)
+1.  [使用Maven创建和部署Servlet项目](#org5e68169)
+    1.  [创建项目](#orgd7daecf)
+    2.  [POM加入 `servlet` 依赖](#orgba7fdd3)
+    3.  [POM指定 `JRE` 版本](#orgeffa8c4)
+    4.  [实现自己的 `servlet` 代码](#org471d9c0)
+    5.  [生成 `war` 文件](#org3de5c9f)
+    6.  [在Tomcat上部署](#orgd505333)
+        1.  [配置 `Tomcat` 管理用户名和密码](#orgeefd7e9)
+        2.  [启动或重启Tomcat](#orgafd44c4)
+        3.  [在Maven中配置Tomcat的用户名和密码](#orgfe07059)
+        4.  [在项目的POM文件中配置Tomcat的插件](#orge5fd3f9)
+        5.  [部署或卸载应用](#org8ff16d4)
 
 
-<a id="org64bee70"></a>
+<a id="org5e68169"></a>
 
 # 使用Maven创建和部署Servlet项目
 
 
-<a id="org044791d"></a>
+<a id="orgd7daecf"></a>
 
 ## 创建项目
 
@@ -29,7 +29,7 @@
 选则 `10 - webapp`, 一步步跟着提示填入 `GroupID` 和 `ArtifactID`,即可生成项目
 
 
-<a id="orgc329988"></a>
+<a id="orgba7fdd3"></a>
 
 ## POM加入 `servlet` 依赖
 
@@ -41,7 +41,7 @@
     </dependency>
 
 
-<a id="orga2b77a4"></a>
+<a id="orgeffa8c4"></a>
 
 ## POM指定 `JRE` 版本
 
@@ -54,7 +54,7 @@
     </plugin>
 
 
-<a id="orgeefd974"></a>
+<a id="org471d9c0"></a>
 
 ## 实现自己的 `servlet` 代码
 
@@ -65,12 +65,18 @@
     	private static final long serialVersionUID = 1L;
     
     	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-    	resp.getWriter().append("Hello, servlet!");
+    	resp.setContentType("text/html;charset=utf-8");
+    	PrintWriter out = resp.getWriter();
+    	out.println("<html>" +
+    		"<body>" +
+    		"<h1 align=center> 这是你手写的Servlet </h1>" +
+    		"今天是4月22日" +
+    		"</body>" + "<html>");
         }
     }
 
 
-<a id="org78d60b7"></a>
+<a id="org3de5c9f"></a>
 
 ## 生成 `war` 文件
 
@@ -79,12 +85,12 @@
 在 `target` 目录下可以看到新生成的war文件
 
 
-<a id="org6a8f6fe"></a>
+<a id="orgd505333"></a>
 
 ## 在Tomcat上部署
 
 
-<a id="org07926a6"></a>
+<a id="orgeefd7e9"></a>
 
 ### 配置 `Tomcat` 管理用户名和密码
 
@@ -95,7 +101,7 @@
     <user username="admin" password="password" roles="manager-gui, manager-script"/>
 
 
-<a id="org82b0a5c"></a>
+<a id="orgafd44c4"></a>
 
 ### 启动或重启Tomcat
 
@@ -103,7 +109,7 @@
 -   `bin/starup.sh`
 
 
-<a id="org3afac1c"></a>
+<a id="orgfe07059"></a>
 
 ### 在Maven中配置Tomcat的用户名和密码
 
@@ -118,7 +124,7 @@
 **注意: username 和 password 需要和Tomcat的conf文件中配置保持一致**
 
 
-<a id="orgebd3083"></a>
+<a id="orge5fd3f9"></a>
 
 ### 在项目的POM文件中配置Tomcat的插件
 
@@ -140,7 +146,7 @@
 -   `<path>` `app` 运行在Tomcat上的路径
 
 
-<a id="orga9622fb"></a>
+<a id="org8ff16d4"></a>
 
 ### 部署或卸载应用
 
