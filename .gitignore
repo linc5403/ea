@@ -1,6 +1,9 @@
 **/target/
 **/.idea/
+**/.mvn/
 **/.settings/
 *.swp
+*.cmd
+mvnw
 .project
 .classpath
