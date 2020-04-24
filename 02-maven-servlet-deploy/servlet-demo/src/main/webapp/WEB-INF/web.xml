@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+      <servlet-name>my-1st-servlet</servlet-name>
+      <servlet-class>club.banyuan.ServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>my-1st-servlet</servlet-name>
+      <url-pattern>/aaa</url-pattern>
+  </servlet-mapping>
 </web-app>
