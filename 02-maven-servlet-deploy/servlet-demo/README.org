@@ -30,7 +30,6 @@
    ~src/main/java/club/banyuan/ServletDemo.java~
 
    #+begin_src java
-     @WebServlet("/servlet")
      public class ServletDemo extends HttpServlet{
 	     private static final long serialVersionUID = 1L;
 
@@ -101,6 +100,19 @@
     - ~<url>~ 配置Tomcat的管理地址,你只需要注意IP和端口号是否需要改变,其余不动
     - ~<server>~ 和Maven ~settings.xml~ 中配置的 ~<server> <id>~ 保持一致
     - ~<path>~ ~app~ 运行在Tomcat上的路径
+
+*** 在DD文件中(web.xml)配置servlet映射关系
+    #+begin_src xml
+      <servlet>
+	  <servlet-name>my-1st-servlet</servlet-name>
+	  <servlet-class>club.banyuan.ServletDemo</servlet-class>
+      </servlet>
+      <servlet-mapping>
+	  <servlet-name>my-1st-servlet</servlet-name>
+	  <url-pattern>/aaa</url-pattern>
+      </servlet-mapping>
+    #+end_src
+
 *** 部署或卸载应用
     - ~mvn tomcat7:deploy~
     - ~mvn tomcat7:redeploy~
