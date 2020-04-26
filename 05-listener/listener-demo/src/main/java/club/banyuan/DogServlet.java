@@ -10,6 +10,6 @@ public class DogServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html;charset=utf-8");
         Writer out = resp.getWriter();
-        out.append( req.getServletContext().getAttribute("dog").toString() );
+        out.append( getServletContext().getAttribute("dog").toString() );
     }
 }
