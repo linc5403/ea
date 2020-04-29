@@ -1,4 +1,3 @@
-<jsp:useBean id="name" scope="request" type="java.lang.String"/>
 <jsp:useBean id="result" scope="application" type="java.lang.Integer"/>
 <%--
   Created by IntelliJ IDEA.
