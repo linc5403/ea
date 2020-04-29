@@ -5,11 +5,11 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>1stApp</servlet-name>
+    <servlet-name>demo</servlet-name>
     <servlet-class>club.banyuan.WebApp</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>1stApp</servlet-name>
+    <servlet-name>demo</servlet-name>
     <url-pattern>/demo</url-pattern>
   </servlet-mapping>
 </web-app>
