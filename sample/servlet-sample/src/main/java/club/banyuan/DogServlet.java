@@ -7,14 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/hello")
-public class Hello extends HttpServlet {
+@WebServlet(value = {"/dog"})
+public class DogServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().append("this is Hello servlet");
-        resp.getWriter().append(
-                getServletConfig().
-                getServletContext().getInitParameter("ooo")
-        );
+        resp.setContentType("text/html;charset=utf-8");
+        Dog dog = (Dog)getServletContext().getAttribute("dog");
+        resp.getWriter().println(dog);
     }
 }

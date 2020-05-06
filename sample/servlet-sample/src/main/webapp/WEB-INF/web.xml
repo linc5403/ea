@@ -4,4 +4,36 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>ooo</param-name>
+    <param-value>ooooooo</param-value>
+  </context-param>
+  <context-param>
+    <param-name>breed</param-name>
+    <param-value>柯基</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>club.banyuan.CalAdd</servlet-class>
+    <init-param>
+      <param-name>aaa</param-name>
+      <param-value>abc</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/abc</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>filter1</filter-name>
+    <filter-class>club.banyuan.Filter1</filter-class>
+    <init-param>
+      <param-name>aaa</param-name>
+      <param-value>bbb</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>filter1</filter-name>
+    <url-pattern>/hello</url-pattern>
+  </filter-mapping>
 </web-app>
