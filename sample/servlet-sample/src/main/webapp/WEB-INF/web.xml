@@ -4,4 +4,8 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>mail-address</param-name>
+    <param-value>linch1982@gmail.com</param-value>
+  </context-param>
 </web-app>
