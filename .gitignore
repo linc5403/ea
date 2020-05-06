@@ -3,6 +3,7 @@
 **/.idea/
 **/.mvn/
 **/.settings/
+**/*.zip
 *.swp
 *.cmd
 mvnw

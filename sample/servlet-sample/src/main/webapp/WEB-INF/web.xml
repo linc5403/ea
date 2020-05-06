@@ -8,4 +8,33 @@
     <param-name>mail-address</param-name>
     <param-value>linch1982@gmail.com</param-value>
   </context-param>
+    <servlet>
+      <servlet-name>abc</servlet-name>
+      <servlet-class>club.banyuan.CalAdd</servlet-class>
+      <init-param>
+        <param-name>name</param-name>
+        <param-value>zhangsan</param-value>
+      </init-param>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/abc</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>para-a</filter-name>
+    <filter-class>club.banyuan.ParaAFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>para-b</filter-name>
+    <filter-class>club.banyuan.ParaBFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>para-b</filter-name>
+    <url-pattern>/operator1/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>para-a</filter-name>
+    <url-pattern>/operator1/*</url-pattern>
+  </filter-mapping>
+
 </web-app>

@@ -12,6 +12,7 @@ import java.io.IOException;
 public class CalAdd extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        getServletConfig().getInitParameter("name");
         Integer a = Integer.valueOf( req.getParameter("a") );
         Integer b = Integer.valueOf( req.getParameter("b") );
         Integer c = a + b;
