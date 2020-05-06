@@ -14,18 +14,12 @@ public class CalAdd extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ServletContext context = getServletContext();
-        String aaa = getServletConfig().getInitParameter("aaa");
-//        Integer a = Integer.valueOf( req.getParameter("a") );
-//        Integer b = Integer.valueOf( req.getParameter("b") );
-//        Integer c = a + b;
-
-        resp.getWriter().println(aaa);
-
-
-//        req.setAttribute("result", c);
-//        req.setAttribute("aaa", aaa);
-//        RequestDispatcher  dispatcher = req.getRequestDispatcher("add.jsp");
-//        dispatcher.forward(req, resp);
+        getServletConfig().getInitParameter("name");
+        Integer a = Integer.valueOf( req.getParameter("a") );
+        Integer b = Integer.valueOf( req.getParameter("b") );
+        Integer c = a + b;
+        req.setAttribute("result", c);
+        RequestDispatcher  dispatcher = req.getRequestDispatcher("add.jsp");
+        dispatcher.forward(req, resp);
     }
 }

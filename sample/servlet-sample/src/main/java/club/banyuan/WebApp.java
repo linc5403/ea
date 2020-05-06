@@ -9,12 +9,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-@WebServlet("/demo")
+@WebServlet("/demo/1")
 public class WebApp extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        /*
         getServletContext().getResourceAsStream("/");
         resp.sendRedirect("hello");
+        */
+        resp.sendRedirect("https://www.baidu.com");
     }
 }

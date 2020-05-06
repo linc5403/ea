@@ -11,6 +11,9 @@ import java.io.IOException;
 public class Hello extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // 发送邮件
+        MailSender sender = (MailSender)getServletContext().getAttribute("mail-sender");
+        sender.sendMail("abc@aaa.com");
         resp.getWriter().append("this is Hello servlet");
         resp.getWriter().append(
                 getServletConfig().

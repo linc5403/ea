@@ -1,7 +1,9 @@
+**/.DS_Store
 **/target/
 **/.idea/
 **/.mvn/
 **/.settings/
+**/*.zip
 *.swp
 *.cmd
 mvnw
