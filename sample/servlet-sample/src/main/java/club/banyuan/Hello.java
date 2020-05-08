@@ -15,5 +15,9 @@ public class Hello extends HttpServlet {
         MailSender sender = (MailSender)getServletContext().getAttribute("mail-sender");
         sender.sendMail("abc@aaa.com");
         resp.getWriter().append("this is Hello servlet");
+        resp.getWriter().append(
+                getServletConfig().
+                getServletContext().getInitParameter("ooo")
+        );
     }
 }

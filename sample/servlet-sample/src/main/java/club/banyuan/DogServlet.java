@@ -6,18 +6,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Date;
 
-@WebServlet("/demo/1")
-public class WebApp extends HttpServlet {
-
+@WebServlet(value = {"/dog"})
+public class DogServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*
-        getServletContext().getResourceAsStream("/");
-        resp.sendRedirect("hello");
-        */
-        resp.sendRedirect("https://www.baidu.com");
+        resp.setContentType("text/html;charset=utf-8");
+        Dog dog = (Dog)getServletContext().getAttribute("dog");
+        resp.getWriter().println(dog);
     }
 }
