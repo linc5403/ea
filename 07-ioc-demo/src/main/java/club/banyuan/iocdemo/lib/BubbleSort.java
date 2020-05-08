@@ -1,8 +1,13 @@
 package club.banyuan.iocdemo.lib;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
+@Primary
 public class BubbleSort implements SortAlgorithm{
     @Override
     public List<Integer> sort(List<Integer> input) {
