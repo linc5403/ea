@@ -6,12 +6,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 @Controller
 @RequestMapping("/hello")
 public class HelloController {
     @GetMapping
-    @ResponseBody
     public String sayHello() {
-        return "Hello, Spring!";
+         return "blog";
+    // public void sayHello(HttpServletResponse resp) throws IOException {
+    //    resp.getWriter().println("Hello, Spring!");
     }
 }
