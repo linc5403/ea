@@ -1,0 +1,11 @@
+* 什么是DI？
+* 在Spring中注入Bean有几种方式？你认为那种方式最好， 为什么？
+* BeanFactory和ApplicationContext之间的区别是什么？
+* 什么是Spring Bean？
+* 如何定义Spring Bean的作用域？
+* Spring Bean的生命周期是怎样的？
+* Spring Boot是什么？
+* 列举Spring Framework所使用的设计模式
+* Bean Scope Prototype如何工作？
+* 描述在Spring MVC模型下对于一次请求的完整工作流
+* AOP的实现原理及其优点

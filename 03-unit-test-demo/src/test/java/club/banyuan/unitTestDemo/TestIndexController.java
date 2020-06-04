@@ -19,6 +19,7 @@ public class TestIndexController {
     public void setup() {
         this.mvc = MockMvcBuilders.standaloneSetup(new IndexController()).build();
     }
+
     @Test
     public void showHomePage() throws Exception {
         this.mvc.perform(
@@ -26,6 +27,6 @@ public class TestIndexController {
                         .accept(MediaType.parseMediaType("application/html;charset=UTF-8")))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/html;charset=UTF-8"))
-                .andExpect(content().string("Hello"));
+                .andExpect(content().string("Hello!"));
     }
 }

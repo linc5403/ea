@@ -11,7 +11,17 @@ public class OperatorBeanTestBySpringBootTests {
     OperatorBean operatorBean;
 
     @Test
-    public void addTest() {
+    public void addTest1() {
         Assertions.assertEquals(4, operatorBean.add(1, 3));
+    }
+
+    @Test
+    public void addTest2() {
+        Assertions.assertEquals(5, operatorBean.add(1, 3));
+    }
+
+    @Test
+    public void subTest1() {
+        Assertions.assertEquals(8, operatorBean.sub(10, 2));
     }
 }
