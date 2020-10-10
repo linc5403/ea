@@ -1,0 +1,80 @@
+* Spring Unit Test
+
+** 公共
+   - ~@SpringBootTest~
+     用在测试类上进行注解, 指定测试类使用SpringBoot的测试框架
+   - ~@Test~
+
+     ~import org.junit.jupiter.api.Test;~
+
+     指定测试用例, 即测试类的方法
+
+** Controller
+
+   通常情况下 ~Controller~ 主要负责路由, 参数解析等工作, 业务不太复杂, 因此实际工作中并非测试的重点.
+
+   - ~private MockMvc mvc;~
+     
+     使用 ~MockMvc~ 对MVC框架进行测试.
+
+   - ~@Before~
+
+     构建 ~Controller~ 的实例, 为测试用例准备好条件. (业务代码的Controller是由IOC容器来生成)
+     
+     #+begin_src java
+       @Before
+       public void setup() {
+	   this.mvc = MockMvcBuilders.standaloneSetup(new IndexController()).build();
+       }
+     #+end_src
+
+   - ~this.mvc.perform~
+
+     通过发送Request来获取Response, 验证Response是否符合预期.
+
+     #+begin_src java
+       @Test
+       public void showHomePage() throws Exception {
+	   this.mvc.perform(
+		       get("/")
+			   .accept(MediaType.parseMediaType("application/html;charset=UTF-8")))
+		   .andExpect(status().isOk())
+		   .andExpect(content().contentType("application/html;charset=UTF-8"))
+		   .andExpect(content().string("Hello!"));
+       }
+     #+end_src
+     
+** Service
+
+   Service层一般会依赖于Repository, 因此需要将Repository解耦.
+
+   - ~@MockBean~
+
+     指定在测试用例中生成Bean, 而不是使用IOC容器中的Bean
+
+     #+begin_src java
+       @MockBean
+       private EmployDao employDao;
+     #+end_src
+
+   - ~import static org.mockito.BDDMockito.given;~
+
+     使用BDDMockito的given方法构造Repository层的返回值
+
+     #+begin_src java
+       @Test
+       void findIdByName() {
+	   EmployBean zhangsan = new EmployBean("zhangsan", 20, 10);
+
+	   given(employDao.searchByName("zhangsan")).willReturn(zhangsan);
+
+	   Integer id = employService.findIdByName("zhangsan");
+	   Assertions.assertEquals(10, id);
+       }
+     #+end_src
+
+** 测试使用的资源文件配置
+
+   - ~@TestPropertySource(locations = "/application-test.yml")~
+
+   - ~@ActiveProfiles("test")~
