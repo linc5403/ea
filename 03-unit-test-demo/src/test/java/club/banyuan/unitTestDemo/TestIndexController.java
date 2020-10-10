@@ -22,11 +22,10 @@ public class TestIndexController {
 
     @Test
     public void showHomePage() throws Exception {
-        this.mvc.perform(
-                    get("/")
+        this.mvc.perform(get("/")
                         .accept(MediaType.parseMediaType("application/html;charset=UTF-8")))
-                .andExpect(status().isOk())
-                .andExpect(content().contentType("application/html;charset=UTF-8"))
-                .andExpect(content().string("Hello!"));
+                        .andExpect(status().isOk())
+                        .andExpect(content().contentType("application/html;charset=UTF-8"))
+                        .andExpect(content().string("Hello!"));
     }
 }

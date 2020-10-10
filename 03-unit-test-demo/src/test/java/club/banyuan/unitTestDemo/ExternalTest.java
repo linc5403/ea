@@ -14,6 +14,6 @@ public class ExternalTest {
 
     @Test
     void test() {
-        Assertions.assertEquals("woo", foo);
+        Assertions.assertEquals("bar", foo);
     }
 }
